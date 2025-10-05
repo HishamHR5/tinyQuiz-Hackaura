@@ -1,0 +1,47 @@
+{
+  "name": "tinyquiz-backend",
+  "version": "1.0.0",
+  "description": "AI-powered quiz generation and management backend using Google Gemini",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "start": "node server.js",
+    "test": "node test-api.js",
+    "setup": "node scripts/setup.js",
+    "cleanup": "node scripts/cleanup.js",
+    "generate-secret": "node -e \"console.log('JWT_SECRET=' + require('crypto').randomBytes(64).toString('hex'))\"",
+    "health": "curl http://localhost:5000/api/health || node -e \"console.log('Server not running. Start with: npm run dev')\"",
+    "docs": "curl http://localhost:5000/api/docs || node -e \"console.log('Server not running. Start with: npm run dev')\""
+  },
+  "keywords": [
+    "quiz",
+    "ai",
+    "education",
+    "gemini",
+    "nodejs",
+    "express",
+    "mongodb"
+  ],
+  "author": "TinyQuiz Team",
+  "license": "MIT",
+  "type": "commonjs",
+  "dependencies": {
+    "axios": "^1.11.0",
+    "bcryptjs": "^3.0.2",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.1",
+    "express": "^5.1.0",
+    "google-auth-library": "^10.2.1",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.16.5",
+    "morgan": "^1.10.1",
+    "node-cron": "^4.2.1",
+    "openai": "^5.11.0",
+    "passport": "^0.7.0",
+    "passport-google-oauth20": "^2.0.0",
+    "passport-jwt": "^4.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
