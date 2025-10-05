@@ -132,13 +132,6 @@ unit6-tech/
 
 You can deploy the backend and frontend separately. The backend README has instructions for deploying to services like Railway, Heroku, and Vercel. The frontend can be built and deployed as a static site or using a service like Firebase Hosting or Vercel.
 
-## 🤝 Contributing
-
-1.  Fork the repository.
-2.  Create your feature branch (`git checkout -b feature/amazing-feature`).
-3.  Commit your changes (`git commit -m 'Add amazing feature'`).
-4.  Push to the branch (`git push origin feature/amazing-feature`).
-5.  Open a Pull Request.
 
 ## 📄 License
 
